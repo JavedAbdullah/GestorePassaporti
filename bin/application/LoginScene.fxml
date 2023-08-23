@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerLogin">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="197.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,6 +25,7 @@
    <center>
       <AnchorPane prefHeight="465.0" prefWidth="418.0" BorderPane.alignment="CENTER">
          <children>
+            <PasswordField fx:id="password" layoutX="123.0" layoutY="173.0" />
             <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="147.0" layoutY="14.0">
                <image>
                   <Image url="@lock.png" />
@@ -40,16 +41,14 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="128.0" layoutY="119.0" />
+            <TextField fx:id="username" layoutX="128.0" layoutY="119.0" />
             <Label layoutX="24.0" layoutY="172.0" text="Password">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <PasswordField layoutX="123.0" layoutY="173.0" />
-            <Button layoutX="132.0" layoutY="226.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: #275576;" text="Login" textFill="WHITE" />
-            <Button layoutX="129.0" layoutY="314.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="72.0" text="Registrati" />
-            <Label layoutX="137.0" layoutY="284.0" text="oppure ..." />
+            <Button fx:id="lognBtn" layoutX="132.0" layoutY="226.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: #275576;" text="Login" textFill="WHITE" />
+            <Label fx:id="forErrorLabel" layoutX="83.0" layoutY="274.0" textFill="#ef2d2d" />
          </children>
       </AnchorPane>
    </center>
