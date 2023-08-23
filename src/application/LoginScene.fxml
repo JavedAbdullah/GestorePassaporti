@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="407.0" fitWidth="234.0" layoutX="-2.0" layoutY="-3.0">
                <image>
-                  <Image url="@passportLOGO.png" />
+                  <Image url="@images/passportLOGO.png" />
                </image>
             </ImageView>
          </children>
@@ -28,7 +28,7 @@
             <PasswordField fx:id="password" layoutX="123.0" layoutY="173.0" />
             <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="147.0" layoutY="14.0">
                <image>
-                  <Image url="@lock.png" />
+                  <Image url="@images/lock.png" />
                </image>
             </ImageView>
             <Label layoutX="130.0" layoutY="66.0" prefHeight="44.0" prefWidth="96.0" text="Login" textFill="#275576">
