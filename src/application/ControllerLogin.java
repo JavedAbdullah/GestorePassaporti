@@ -55,7 +55,7 @@ public class ControllerLogin {
 				forErrorLabel.setText("credenziali errate, riprovare!");
 			}else {
 				
-				root = FXMLLoader.load(getClass().getResource("Loggato	.fxml"));
+				root = FXMLLoader.load(getClass().getResource("Loggato.fxml"));
 				stage = (Stage)(((Node) event.getSource()).getScene().getWindow());
 				scene = new Scene(root);
 				stage.setScene(scene);
